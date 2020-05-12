@@ -41,6 +41,6 @@ To run the home service code, running the following scripts
 $ cd ~/catkin_ws/src/scripts
 $ ./home_service.sh
 ```
-Home service If everything is installed correctly you should see the windows below, with the robot nevigating to the pickup point to pick the virtual object and then dropping it off.
+If everything is installed correctly you should see the windows below, with the robot nevigating to the pickup point to pick the virtual object and then dropping it off.
 
 ![](home_robot_in_action.gif)
