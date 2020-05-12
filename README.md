@@ -1,2 +1,2 @@
-# home_service_robot
+# Home Service Robot Project
 Udacity Home Service Robot Project 
