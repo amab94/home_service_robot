@@ -10,16 +10,17 @@ The following steps where taken in order to achieve the final outcome for this p
 - Write an add_markers node that subscribes to the pick_objects node, to notify the robot when the object is picked up or dropped off to simulate a virtual object.
 
 To get started create ROS workspace or importe the current repo to your src folders
+```
 $mkdir -p ~/catkin_ws/search
 $cd ~/catkin_ws
 $catkin_make
 $source devel/setup.bash
-
+```
 Clone the required repositories to the ~/catkin_ws/src
-,,,
+```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/amab94/home_service_robot.git
-,,,
+```
 ## Required ROS packages
 The repo should include all the required packages, just incase it doesnt here they are;
   1.  gmapping: With the gmapping_demo.launch file, you can easily perform SLAM and build a map of the environment with a robot equipped with laser range finder sensors or RGB-D cameras.
@@ -28,18 +29,18 @@ The repo should include all the required packages, just incase it doesnt here th
   4.  turtlebot_gazebo: With the turtlebot_world.launch you can deploy a turtlebot in a gazebo environment by linking the world file to it.
 
 To install the packages run the installation script.
-,,,
+```
 $ cd scripts
 $ ./installations.sh
 $ cd ~/catkin_ws
 $ catkin_make
 $ source devel/setup.bash
-,,,
+```
 To run the home service code, running the following scripts
-,,,
+```
 $ cd ~/catkin_ws/src/scripts
 $ ./home_service.sh
-,,,
-
+```
 Home service If everything is installed correctly you should see the windows below, with the robot nevigating to the pickup point to pick the virtual object and then dropping it off.
+
 ![](home_robot_in_action.gif)
