@@ -60,7 +60,7 @@ for (int i=0; i < num_stops; i++){
       sleep(5);}
       else{
       ROS_INFO("Failed to reach goal");
-    ros::Duration(5.0).sleep();
+      ros::Duration(5.0).sleep();
   }
   }
 
